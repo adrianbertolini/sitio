@@ -1,0 +1,164 @@
+:root {
+  --blanco: #f3f3f3;
+  --gris: #bfbfbf;
+  --azul: #16243b;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100dvh;
+  width: min(65ch, 100% - 4rem);
+  color: var(--blanco);
+  background: #21334f;
+  background-image: linear-gradient(45deg, #21334f 0%, #1b5170 25%, #05718b 50%, #3e968f 75%, #3ab3ab 100%);
+  /* background-image: linear-gradient(-45deg, #21334f  0%, #1b5170 50%, #3ab3ab 100%); */
+  padding: 3rem 0;
+  background-size: 200% 200%;
+  -webkit-animation: AnimarFondo 15s ease infinite;
+  animation: AnimarFondo 15s ease infinite;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  flex-direction: column;
+  padding: 3rem 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  color: transparent;
+  animation: Aparecer 5s ease forwards;
+}
+
+.header h2 {
+  font-size: 1.9rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: transparent;
+  animation: Aparecer 7s ease forwards;
+}
+
+.header p {
+  margin-bottom: .75rem;
+}
+
+.button {
+  margin-top: 2rem;
+  color: var(--blanco);
+  background-color: var(--azul);
+  border: 3px solid transparent;
+  border-radius: 5px;
+  padding: .75rem 1.5rem;
+}
+
+.button:hover {
+  color: var(--azul);
+  border: 3px solid var(--azul);
+  animation: FondoHover 600ms 100ms ease-in-out forwards;
+}
+
+.footer {
+  margin-top: 2rem;
+}
+
+.footer ul{
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+.copyright {
+  opacity: .75;
+  flex-direction: column;
+}
+
+.copyright:hover {
+  opacity: 1;
+}
+
+.copyright > li {
+  font-size: .85rem;
+}
+
+.copyright > li a {
+  color: var(--blanco);
+}
+
+/* Animaciones */
+
+@-webkit-keyframes AnimarFondo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimarFondo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes Aparecer {
+  10% { color: transparent; }
+  100% { color: var(--blanco);}
+}
+
+@keyframes Aparecer {
+  10% { color: transparent; }
+  100% { color: var(--blanco);}
+}
+
+
+@keyframes FondoHover {
+  100% {
+    background-color: var(--gris);
+  }
+}
+
+/* Media queries <= 510px */
+@media (max-width: 510px) {
+
+  .main {
+    padding: 3.5rem 0;
+  }
+
+  .logo {
+    width: 6rem;
+  }
+
+  .main_title {
+    font-size: 2.4rem;
+    line-height: 1.1;
+  }
+
+  .sub_title {
+    font-size: 1.7rem;
+  }
+
+}

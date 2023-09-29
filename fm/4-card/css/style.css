@@ -1,0 +1,144 @@
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+}
+
+.header {
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
+/* Color de los textos */
+
+.header h1,
+.header h2,
+.card h3 {
+  color: hsl(234, 12%, 34%);
+}
+
+.header p,
+.card p {
+  color: hsl(229, 6%, 66%);
+}
+
+/* Color de los textos */
+
+.header h1 {
+  font-weight: 200;
+  font-size: 1.67rem;
+  margin-bottom: 0;
+}
+
+.header h2 {
+  font-weight: 600;
+  font-size: 1.63rem;
+  margin-top: 0;
+}
+
+.header p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1em;
+}
+
+.card {
+  max-width: 296px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin-bottom: 3rem;
+  border: 1px solid hsl(0, 0%, 98%);
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgb(211, 211, 211);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+}
+
+.card p {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.card img {
+  align-self: flex-end;
+}
+
+.cyan {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.red {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.orange {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.blue {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.footer {
+    margin-top: 2em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*********** Media queries ***********/
+
+@media only screen and (min-width: 850px) {
+  
+    .header p {
+    display: inline-block;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+
+  .central-cards {
+    margin: 0 1em;
+  }
+}
