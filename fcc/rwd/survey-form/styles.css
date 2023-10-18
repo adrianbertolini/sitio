@@ -1,0 +1,124 @@
+/* Importo la fuente de Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700");
+
+/* Reset y fuente para todos los elementos del documento */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Color de fondo */
+body {
+  background: #317253;
+  background: -webkit-linear-gradient(to top, #4aaa7b, #317253);
+  background: linear-gradient(to top, #4aaa7b, #317253);
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 3rem;
+}
+
+.header {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Div que contiene el formulario */
+.form {
+  max-width: 76rem;
+  margin: 2rem auto;
+  padding: 2rem 4rem;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.199);
+}
+
+small {
+  font-size: 0.8em;
+  color: rgb(233, 233, 233);
+  margin-left: 1.5rem;
+}
+
+.form-group {
+  margin: 2.5rem 0;
+}
+
+/* Alineado centrado para todos los elementos con clase center */
+.center {
+  text-align: center;
+}
+
+/* Quito el subrayado de los enlaces */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Marco el subrayado de los enlaces en el hover*/
+a:hover {
+  text-decoration: underline;
+}
+
+/* Elementos label y legend */
+label,
+legend {
+  font-size: 1.6rem;
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Elementos input, textarea, select y fieldset */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select,
+fieldset {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-top: 1rem;
+}
+
+/* Botón Submit */
+button[type="submit"] {
+  background: #527f71;
+  margin: 0 auto;
+  outline: 0;
+  color: white;
+  border: 1px solid #2a4d4245;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: all ease-in-out 0.1s;
+  position: relative;
+  display: block;
+}
+
+/* Cambio estilo para el botón en propiedad focus */
+button[type="submit"]:focus {
+  border: 1px solid white;
+}
+
+/* Cambio estilo para el botón en propiedad hover */
+button[type="submit"]:hover {
+  background: #317253;
+}
+
+.footer {
+    padding: 2rem;
+  }
